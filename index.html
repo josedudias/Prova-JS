@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prova - PROGRAMAÇÃO DE COMPUTADORES I</title>
+    <style>
+      #container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      h1 {
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      p {
+        font-size: 1.5em;
+        text-align: center;
+      }
+
+      input {
+        width: 25%;
+        margin-bottom: 10px;
+        padding: 10px;
+        font-size: 1.5em;
+      }
+
+      #resultado,
+      #expectativa {
+        font-size: 1.5em;
+        padding: 10px;
+        margin-top: 10px;
+      }
+      button {
+        padding: 10px;
+        font-size: 1.5em;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Salário e Expectativa de Vaga</h1>
+      <p>
+        Informe a quantidade de anos de experiência do profissional <br />
+        e a linguagem de programação que ele domina (1 - JavaScript, 2- React e
+        3 - Node)
+      </p>
+      <input
+        type="number"
+        id="anos"
+        min="1"
+        placeholder="Anos de experiência"
+      />
+      <br />
+      <select id="linguagem">
+        <option value="javascript">JavaScript</option>
+        <option value="react">React</option>
+        <option value="node">Node</option>
+      </select>
+      <div>
+        <p id="resultado"></p>
+        <p id="expectativa"></p>
+      </div>
+      <button onclick="prova()">Enviar</button>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
